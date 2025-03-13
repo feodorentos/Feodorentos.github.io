@@ -1,36 +1,5 @@
 @font-face {
-    font-family: RobotoB ;
-    src: url(../fonts/Roboto/Roboto-Bold.ttf);
-}
-@font-face {
-    font-family: RobotoM ;
-    src: url(../fonts/Roboto/Roboto-Medium.ttf);
-}
-@font-face {
-    font-family: RobotoL ;
-    src: url(../fonts/Roboto/Roboto-Light.ttf);
-}
-@font-face {
-    font-family: RobotoT ;
-    src: url(../fonts/Roboto/Roboto-Thin.ttf);
+    font-family: Jost;
+    src: url(../fonts/Jost-Regular.ttf);
 }
 
-@font-face {
-    font-family: Beryozki;
-    src: url(../fonts/Beryozki.ttf);
-}
-
-@font-face {
-    font-family: More;
-    src: url(../fonts/DmitrievaSP.otf);
-}
-
-@font-face {
-    font-family: Nova;
-    src: url(../fonts/Novelist_free.otf);
-}
-
-@font-face {
-    font-family: Ts;
-    src: url(../fonts/Vitaliy\ Tsygankov\ -\ TS\ Remarker\ Regular\ 2.otf);
-}
