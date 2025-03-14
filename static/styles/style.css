@@ -223,7 +223,7 @@ body {
 
 .footer-content {
     display: grid;
-    padding: 25px;
+    padding: 30px 20px;
     grid-template-columns: repeat(4, 1fr);
     /* justify-content: center; */
 
