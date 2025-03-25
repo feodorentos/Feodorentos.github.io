@@ -1,180 +1,555 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="static/styles/style.css">
-    <link rel="stylesheet" href="static/styles/fonts.css">
-    <link rel="stylesheet" href="static/styles/reset.css">
-    <link rel="stylesheet" href="static/styles/media.css">
 </head>
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/media.css">
+<link rel="stylesheet" href="css/reset.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 <body>
-
     <header class="header">
         <div class="container">
-            <div class="header-nav">
-                <a href="#!" class="logo">Mebelio<span style="color: #b98e2f;">.</span></a>
-                <nav id="nav" class="nav">
-                    <ul class="nav-list">
-                        <li class="nav-item"><a href="" class="nav-link active">Главная</a></li>
-                        <li class="nav-item"><a href="" class="nav-link">Каталог</a></li>
-                        <li class="nav-item"><a href="" class="nav-link">О нас</a></li>
-                        <li class="nav-item"><a href="" class="nav-link">Контакты</a></li>
+            <div class="header-content">
+                <a href="" class="header-logo-link">
+                    <img src="images/header/logo (1).png" alt=""class="header-img">
+                </a>
+
+                <nav class="header-nav">
+                    <ul class="header-list">
+                        <li class="header-list-item strelka"><a href="">О нас</a></li>
+                        <li class="header-list-item strelka"><a href="">Расписание</a></li>
+                        <li class="header-list-item strelka"><a href="">Программа</a></li>
+                        <li class="header-list-item"><a href="">Фото и видео</a></li>
+                        <li class="header-list-item"><a href="">Команда</a></li>
+                        <li class="header-list-item"><a href="">Контакты</a></li>
                     </ul>
-                    <button id="nav-btn" class="nav-button">
-                        <img id="nav-btn-img" src="static/images/nav-open.svg" alt="Nav button">
-                    </button>
                 </nav>
-    
-                <div class="nav-images">
-                    <img src="static/images/header-logos/user.svg" alt="">
-                    <img src="static/images/header-logos/loupe.svg" alt="">
-                    <img src="static/images/header-logos/heart.svg" alt="">
-                    <img src="static/images/header-logos/basket.svg" alt="">
+
+                <div class="header-info">
+
+                    <a href="tel:+7 495 123 34 25"><span class="header-number">+7 495 123 34 25</span></a>
+
+                    <div class="header-socials">
+                        <img src="images/header/vk.png" alt="">
+                        <img src="images/header/tg.png" alt="">
+                    </div>
+                    <a href="" class="header-button">Записаться на экскурсию</a>
                 </div>
+
+                <button id="nav-btn" class="nav-button">
+                    <img id="nav-btn-img" src="images/header/меню.png" alt="Nav button">
+                </button>
+
+
+                <!-- media -->
+                <nav id="nav-media" class="nav-media">
+                    <button id="nav-cross" class="nav-cross"><img class="nav-cross-img" src="images/header/cross.png" alt=""></button>
+                    <ul class="header-media-list">
+                        <li class="header-media-list-item"><a href="">О нас</a></li>
+                        <li class="header-media-list-item"><a href="">Расписание</a></li>
+                        <li class="header-media-list-item"><a href="">Программа</a></li>
+                        <li class="header-media-list-item"><a href="">Фото и видео</a></li>
+                        <li class="header-media-list-item"><a href="">Команда</a></li>
+                        <li class="header-media-list-item"><a href="">Контакты</a></li>
+                    </ul>
+                    <a href="" class="header-media-button">Записаться на экскурсию</a>
+                    <a href="tel:+7 495 123 34 25"><span class="header-media-number">+7 495 123 34 25</span></a>
+                    <p>Заказать обратный звонок</p>
+            
+                    <div class="nav-socials">
+                        <img src="images/header/vkmed.png" alt="">
+                        <img src="images/header/tgmed.png" alt="">
+                    </div>
+                </nav>
+
+
             </div>
         </div>
     </header>
 
-    <section class="section1">
-        <div class="container">
+    <section class="section1" data-aos="fade-up">
+        <div class="container container-section2">
             <div class="section1-content">
-                <div class="section1-block">
-                    <div class="section1-headText">Свежие поступления</div>
-                    <h1 class="section1-h1">Откройте нашу<br> новую коллекцию</h1>
-                    <p>Стильная мебель для вашего дома — сочетание уюта, современных трендов и высококачественных материалов.</p>
-                    <div class="section1-button">Купить сейчас</div>
+                <div class="section1-text">
+                    <h1>Kidsstory</h1>
+                    <span>Английский детский<br>
+                        сад и клуб
+                    </span>
+                    <div class="section1-strelki">
+                        <img src="images/main/левая.png" alt="">
+                        <img src="images/main/правая.png" alt="">
+                    </div>
+                </div>
+
+                <div class="section1-card">
+                    <h2>Запишитесь<br>
+                        на персональную
+                        экскурсию</h2>
+                    <p>Заполните форму и посмотрите<br>
+                        детский сад вживую в удобное для<br>
+                        вас время</p>
+                    <div class="section1-inputs">
+                        <input class="section1-input" type="text" placeholder="Ваше имя">
+                        <input class="section1-input" type="text" placeholder="+ 7 _  _  _  -  _  _  _  -  _  _  -  _  _">
+                        <input class="section1-input" type="text" placeholder="Ваш e-mail">
+                    </div>
+                    <div class="section1-checkbox">
+                        <input type="checkbox" id="check" class="checkbox">
+                        <label for="check"></label>
+                        <p>Я принимаю условия<br> 
+                            пользовательского соглашения</p>
+                    </div>
+                    <a class="section1-card-button" href="">ЗАПИСАТЬСЯ</a>
+                </div>
+            </div>
+
+            <div class="section1-card2">
+                <h2>Запишитесь<br>
+                    на персональную
+                    экскурсию</h2>
+                <p>Заполните форму и посмотрите<br>
+                    детский сад вживую в удобное для<br>
+                    вас время</p>
+                <div class="section1-inputs2">
+                    <input class="section1-input2" type="text" placeholder="Ваше имя">
+                    <input class="section1-input2" type="text" placeholder="+ 7 _  _  _  -  _  _  _  -  _  _  -  _  _">
+                    <input class="section1-input2" type="text" placeholder="Ваш e-mail">
+                </div>
+                <div class="section1-checkbox2">
+                    <input type="checkbox" id="check2" class="checkbox2">
+                    <label for="check2"></label>
+                    <p>Я принимаю условия<br> 
+                        пользовательского соглашения</p>
+                </div>
+                <a class="section1-card-button2" href="">ЗАПИСАТЬСЯ</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section2" data-aos="fade-down">
+        <img class="section2-backimg" src="images/main/green-crown.png" alt="">
+        <div class="container">
+            <div class="section2-content">
+                <div class="section2-card">
+                    <div class="section2-card-image section2-card-imageO"><img src="images/section2/1.png" alt=""></div>
+                    <span><b>Часы работы:</b> с 7:00 до 19:00</span>
+                </div>
+                <div class="section2-card">
+                    <div class="section2-card-image section2-card-imageP"><img src="images/section2/2.png" alt=""></div>
+                    <span><b>Группы:</b> до 15 человек</span>
+                </div>
+                <div class="section2-card">
+                    <div class="section2-card-image section2-card-imageB"><img src="images/section2/3.png" alt=""></div>
+                    <span><b>Площадь для прогулок:</b> собственная оборудованная территория для прогулок</span>
+                </div>
+                <div class="section2-card">
+                    <div class="section2-card-image section2-card-imageB"><img src="images/section2/4.png" alt=""></div>
+                    <span><b>Видеонаблюдение:</b> онлайн</span>
+                </div>
+                <div class="section2-card">
+                    <div class="section2-card-image section2-card-imageO"><img src="images/section2/5.png" alt=""></div>
+                    <span><b>Англоязычная среда:</b> билингвал / экспат</span>
+                </div>
+                <div class="section2-card">
+                    <div class="section2-card-image section2-card-imageP"><img src="images/section2/6.png" alt=""></div>
+                    <span><b>Возраст детей:</b> с 1,5 до 7 лет</span>
+                </div>
+                <div class="section2-card">
+                    <div class="section2-card-image section2-card-imageP"><img src="images/section2/7.png" alt=""></div>
+                    <span><b>Утренний фильтр медработником:</b> ежедневно</span>
+                </div>
+                <div class="section2-card">
+                    <div class="section2-card-image section2-card-imageB"><img src="images/section2/8.png" alt=""></div>
+                    <span><b>Помещение:</b> 800 кв.м</span>
+                </div>
+                <div class="section2-card">
+                    <div class="section2-card-image section2-card-imageO"><img src="images/section2/9.png" alt=""></div>
+                    <span><b>Питание:</b> 5-разовое, с учетом индивидуальных особенностей ребенка</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <main class="main">
+    <section class="section3" data-aos="flip-up">
         <div class="container">
-            <div class="main-content">
-                <h2 class="main-h2">Исследуйте коллекции</h2>
-                <p>Подберите идеальную мебель для каждого уголка вашего дома.</p>
-                <div class="main-images1">
-                    <div class="main-img1">
-                        <img src="static/images/sec2card1.png" alt="">
-                        <p>Обеденные зоны </p>
+            <div class="section3-content">
+                <div class="section3-text">
+                    <h2>Есть вопросы? Получите 
+                        бесплатную консультацию</h2>
+                    <span>Оставьте телефон и мы перезвоним 
+                        и расскажем все подробности о филиале</span>
+                    <div class="section3-input-button">
+                        <input class="section3-input" type="text" placeholder="+ 7 _  _  _  -  _  _  _  -  _  _  -  _  _">
+                        <a class="section3-card-button" href="">ОТПРАВИТЬ</a>
                     </div>
-                    <div class="main-img1">
-                        <img src="static/images/sec2card2.png" alt="">
-                        <p>Гостиные</p>
-
-                    </div>
-                    <div class="main-img1">
-                        <img src="static/images/sec2card3.png" alt="">
-                        <p>Спальни</p>
-                    </div>
-                </div>
-                <h2 class="main-h2">Популярные товары</h2>
-                <div class="main-images2">
-                    <div class="main-img2">
-                        <img src="static/images/sec3card1.png" alt="">
-                        <div class="main-img2-text">
-                            <h3 class="main-h3">Nordic Light</h3>
-                            <p class="main-image2-p">деревянный стул</p>
-                            <div class="main-images2-cost">8 400 ₽</div>
-                        </div>
-                    </div>
-                    <div class="main-img2">
-                        <img src="static/images/sec3card2.png" alt="">
-                        <div class="main-img2-text">
-                            <h3 class="main-h3">Astra</h3>
-                            <p class="main-image2-p">стильное мягкое кресло</p>
-                            <div class="main-images2-cost">10 500 ₽</div>
-                        </div>
-                    </div>
-                    <div class="main-img2">
-                        <img src="static/images/sec3card3.png" alt="">
-                        <div class="main-img2-text">
-                            <h3 class="main-h3">LoungeMax</h3>
-                            <p class="main-image2-p">просторный угловой диван</p>
-                            <div class="main-images2-cost">61 750 ₽</div>
-                        </div>
-                    </div>
-                    <div class="main-img2">
-                        <img src="static/images/sec3card4.png" alt="">
-                        <div class="main-img2-text">
-                            <h3 class="main-h3">Terra Bar</h3>
-                            <p class="main-image2-p">комплект уличной мебели</p>
-                            <div class="main-images2-cost">4 500 ₽</div>
-                        </div>
-                    </div>
-                    <div class="main-img2">
-                        <img src="static/images/sec3card5.png" alt="">
-                        <div class="main-img2-text">
-                            <h3 class="main-h3">Velvet Rest</h3>
-                            <p class="main-image2-p">круглый пуф с бархатной обивкой</p>
-                            <div class="main-images2-cost">6 500 ₽</div>
-                        </div>
-                    </div>
-                    <div class="main-img2">
-                        <img src="static/images/sec3card6.png" alt="">
-                        <div class="main-img2-text">
-                            <h3 class="main-h3">Cuppa</h3>
-                            <p class="main-image2-p">керамическая кружка</p>
-                            <div class="main-images2-cost">750 ₽</div>
-                        </div>
-                    </div>
-                    <div class="main-img2">
-                        <img src="static/images/sec3card7.png" alt="">
-                        <div class="main-img2-text">
-                            <h3 class="main-h3">DreamNest</h3>
-                            <p class="main-image2-p">кровать с высоким изголовьем</p>
-                            <div class="main-images2-cost">60 000 ₽</div>
-                        </div>
-                    </div>
-                    <div class="main-img2">
-                        <img src="static/images/sec3card8.png" alt="">
-                        <div class="main-img2-text">
-                            <h3 class="main-h3">Leafy</h3>
-                            <p class="main-image2-p">дизайнерский горшок для растений</p>
-                            <div class="main-images2-cost">2 000 ₽</div>
-                        </div>
+                    <div class="section3-checkbox">
+                        <input type="checkbox" id="check3" class="checkbox3">
+                        <label for="check3"></label>
+                        <p>Я принимаю условия<br> 
+                            пользовательского соглашения</p>
                     </div>
                 </div>
-                <div class="main-button">Показать больше →</div>
+                <div class="section3-images">
+                    <img class="section3-img1" src="images/main/pyatna.png" alt="">
+                    <img class="section3-img2" src="images/main/Positive_curious_schoolboy_in_casual_wear_looking_at_camera_through 1.png" alt="">
+                </div>
+        </div>
+    </section>
 
+    <section class="section4" data-aos="zoom-in-up">
+        <div class="container">
+            <div class="section4-content">
+                <h2>Дополнительные услуги</h2>
+                <div class="section4-cards">
+                    <div class="section4-card section4-grid268">
+                        <div class="section4-card-image section4-card-imageO"><img src="images/section4/1.png" alt=""></div>
+                        <span>Йога</span>
+                    </div>
+                    <div class="section4-card section4-grid557">
+                        <div class="section4-card-image section4-card-imageO"><img src="images/section4/2.png" alt=""></div>
+                        <span>Монтессори группа с уникальным 
+                            древесинным оборудованием</span>
+                    </div>
+                    <div class="section4-card section4-grid268">
+                        <div class="section4-card-image section4-card-imageO"><img src="images/section4/3.png" alt=""></div>
+                        <span>Гольф для 
+                            малышей</span>
+                    </div>
+                    <div class="section4-card section4-grid268">
+                        <div class="section4-card-image section4-card-imageO"><img src="images/section4/4.png" alt=""></div>
+                        <span>Занятия с беговелами</span>
+                    </div>
+                    <div class="section4-card section4-grid363">
+                        <div class="section4-card-image section4-card-imageO"><img src="images/section4/5.png" alt=""></div>
+                        <span>Легостроение и конструирование</span>
+                    </div>
+                    <div class="section4-card section4-grid268">
+                        <div class="section4-card-image section4-card-imageO"><img src="images/section4/6.png" alt=""></div>
+                        <span>Тестопластика и глинопластика</span>
+                    </div>
+                    <div class="section4-card section4-grid363">
+                        <div class="section4-card-image section4-card-imageO"><img src="images/section4/7.png" alt=""></div>
+                        <span>Риторика и ораторское мастерство</span>
+                    </div>
+                    <div class="section4-card section4-grid363">
+                        <div class="section4-card-image section4-card-imageO"><img src="images/section4/8.png" alt=""></div>
+                        <span>Занятия по скалолазанию</span>
+                    </div>
+                    <div class="section4-card section4-grid460">
+                        <div class="section4-card-image section4-card-imageO"><img src="images/section4/9.png" alt=""></div>
+                        <span>Театрализация на английском языке</span>
+                    </div>
+                    <div class="section4-card section4-grid460">
+                        <div class="section4-card-image section4-card-imageO"><img src="images/section4/10.png" alt=""></div>
+                        <span>Кулинария и этикет сервисного стола</span>
+                    </div>
+                    <div class="section4-card section4-grid460 section4-cardlast">
+                        <div class="section4-card-image section4-card-imageO"><img src="images/section4/11.png" alt=""></div>
+                        <span>Песочная терапия. Работа на интерактивных столах и досках</span>
+                    </div>
+                    
+                </div>
             </div>
         </div>
-    </main>
+    </section>
 
-
-    <footer class="footer">
+    <section class="section5" data-aos="zoom-out">
         <div class="container">
-                <div class="footer-content">
-                    <div class="footer-content-text fct1">
-                        <h3 class="footer-logoText"> Mebelio.</h3>
-                        <p class="footer-subLogoText">400 University Drive,<br> Suite 200, Coral<br/> Gatiles,<br/> 11,33134 UBA</p>
+            <div class="section5-content">
+                <h2>Преимущества</h2>
+                <span>Наша авторская программа ведётся на русском и английском языках и состоит из<br> увлекательных мероприятий</span>
+
+                <div class="section5-cards">
+                    <div class="section5-card">
+                        <div class="section5-card-image section5-card-imageO"><img src="images/section5/1.png" alt=""></div>
+                        <span>Мастер-классы</span>
                     </div>
-                    <div class="footer-content-text fct2">
-                        <h4>Полезные ссылки</h4>
-                        <p>Главная</p>
-                        <p>Каталог</p>
-                        <p>О нас</p>
+                    <div class="section5-card">
+                        <div class="section5-card-image section5-card-imageP"><img src="images/section5/2.png" alt=""></div>
+                        <span>Игры-квесты</span>
                     </div>
-                    <div class="footer-content-text fct3">
-                        <h4>Помощь</h4>
-                        <p>Оплата</p>
-                        <p>Возвраты</p>
-                        <p>Политика конфиденциальности</p>
+                    <div class="section5-card">
+                        <div class="section5-card-image section5-card-imageB"><img src="images/section5/3.png" alt=""></div>
+                        <span>Конференции и проекты</span>
                     </div>
-                    <div class="footer-content-text fct4">
-                        <h4>Подпишитесь на новости</h4>
-                        <input type="text" placeholder="Введите ваш E-mail">
-                        <button class="footer-button">Подписаться</button>
+                    <div class="section5-card">
+                        <div class="section5-card-image section5-card-imageBl"><img src="images/section5/4.png" alt=""></div>
+                        <span>Опыты и эксперименты</span>
+                    </div>
+                    <div class="section5-card">
+                        <div class="section5-card-image section5-card-imageO"><img src="images/section5/5.png" alt=""></div>
+                        <span>Концерты и спектакли</span>
+                    </div>
+                    <div class="section5-card">
+                        <div class="section5-card-image section5-card-imageP"><img src="images/section2/6.png" alt=""></div>
+                        <span>Соревнования</span>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section6" data-aos="fade-up"
+    data-aos-duration="3000">
+        <div class="container">
+            <div class="section6-content">
+                <h2>Наша команда</h2>
+                <div class="section6-cards">
+                    <div class="section6-card">
+                        <img src="images/section6/Angelina_Jolie_2018_Actress_HD_Posters_2560x1920 1.png" alt="">
+
+                        <h3>Журавлев</h3>
+                        <div>Дмитрий<br> Анатольевич</div>
+                        <p>Педагог - психолог</p>
+                        <p>Стаж 11 лет</p>
+                    </div>
+                    <div class="section6-card">
+                        <img src="images/section6/celebrity-girls-wallpapers-1920x1200-00011 1.png" alt="">
+
+                        <h3>Журавлев</h3>
+                        <div>Дмитрий<br> Анатольевич</div>
+                        <p>Педагог - психолог</p>
+                        <p>Стаж 11 лет</p>
+                    </div>
+                    <div class="section6-card">
+                        <img src="images/section6/Angelina_Jolie_2018_Actress_HD_Posters_2560x1920 1.png" alt="">
+
+                        <h3>Журавлев</h3>
+                        <div>Дмитрий<br> Анатольевич</div>
+                        <p>Педагог - психолог</p>
+                        <p>Стаж 11 лет</p>
+                    </div>
+                    <div class="section6-card">
+                        <img src="images/section6/celebrity-girls-wallpapers-1920x1200-00011 1.png" alt="">
+
+                        <h3>Журавлев</h3>
+                        <div>Дмитрий<br> Анатольевич</div>
+                        <p>Педагог - психолог</p>
+                        <p>Стаж 11 лет</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section7" data-aos="fade-up">
+        <div class="container">
+            <div class="section7-content">
+                <div class="section7-text">
+                    <h2>Остались вопросы? Получите 
+                        бесплатную консультацию</h2>
+                    <span>Оставьте телефон и мы перезвоним 
+                        и расскажем все подробности о филиале</span>
+                    <div class="section7-input-button">
+                        <input class="section7-input" type="text" placeholder="+ 7 _  _  _  -  _  _  _  -  _  _  -  _  _">
+                        <a class="section7-card-button" href="">ОТПРАВИТЬ</a>
+                    </div>
+                    <div class="section7-checkbox">
+                        <input type="checkbox" id="check7" class="checkbox7">
+                        <label for="check7"></label>
+                        <p>Я принимаю условия<br> 
+                            пользовательского соглашения</p>
+                    </div>
+                </div>
+                <div class="section7-images">
+                    <img class="section7-img1" src="images/section7/tyap-lyap7.png" alt="">
+                    <img class="section7-img2" src="images/section7/malchik-palchik.png" alt="">
+                </div>
+        </div>
+    </section>
+
+    <section class="section8" data-aos="fade-right">
+        <div class="container">
+            <div class="section8-content">
+                <h2>О нашем центре</h2>
+                <p>Мы создали пространство, в котором каждый ребёнок проявляет и раскрывает себя,<br> развивает индивидуальные особенности и таланты.
+                </p>
+                <h3>Наша задача — сделать так, чтобы каждый день в Kids story был счастливым.
+                </h3>
+
+                <ul class="section8-list">
+                    <li class="section8-list-item">Английский детский клуб. Для детей с 2 до 7 лет. Погружение в языковую среду, собственная кухня, охраняемая огороженная территория, медицинский кабинет, соляная пещера.
+                    </li>
+                    <li class="section8-list-item">Дополнительные услуги. Для детей с 2 до 18 лет. Развивающие студии, творческие мастерские, спортивные секции.
+                    </li>
+                    <li class="section8-list-item">Kids story - «ежедневное развитие детей на 360 градусов».</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section9" data-aos="fade-left">
+        <div class="container container9">
+            <div class="section9-content">
+                <h2>Отзывы о саде</h2>
+                <div class="carousel-container">
+                    <button class="prev"><img src="images/section9/left.png" alt=""></button>
+                    <div class="carousel">
+                        <div class="carousel-item active">
+                            <div class="review">
+                                <div class="review-name">
+                                    <img src="images/section9/man.png" alt="">
+                                    <div class="review-name-name">
+                                        <h3>Дмитрий</h3>
+                                        <p>Москва</p>
+                                    </div>
+                                </div>
+                                <span>Водим двоих детей, очень довольны уровнем и качеством образования, если нужен просто детский сад, то вам не сюда. Дети знают английский (произношение, грамматика и пр.)</span>
+                            </div>
+                            <div class="review">
+                                <div class="review-name">
+                                    <img src="images/section9/man.png" alt="">
+
+                                    <div class="review-name-name">
+                                        <h3>Елена</h3>
+                                        <p>Санкт-Петербург</p>
+                                    </div>
+                                </div>
+                                <span>Мы выбрали этот сад для развития творческих способностей наших детей. Результаты превзошли наши ожидания — дети стали более уверенными и любознательными.</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="review">
+                                <div class="review-name">
+                                    <img src="images/section9/man.png" alt="">
+
+                                    <div class="review-name-name">
+                                        <h3>Александр</h3>
+                                        <p>Мурманск</p>
+                                    </div>
+                                </div>
+                                <span>Мы были приятно удивлены уровнем организации и заботой о детях. Сад предоставляет все необходимое для полноценного развития ребенка.</span>
+                            </div>
+                            <div class="review">
+                                <div class="review-name">
+                                    <img src="images/section9/man.png" alt="">
+
+                                    <div class="review-name-name">
+                                        <h3>Наталья</h3>
+                                        <p>Минск</p>
+                                    </div>
+                                </div>
+                                <span>Наш ребенок стал более социальным и уверенным после поступления в этот сад. Мы очень довольны качеством образования и уходом.</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="review">
+                                <div class="review-name">
+                                    <img src="images/section9/man.png" alt="">
+
+                                    <div class="review-name-name">
+                                        <h3>Иван</h3>
+                                        <p>Рига</p>
+                                    </div>
+                                </div>
+                                <span>Мы выбрали этот сад за его уникальную программу развития детей. Результаты действительно впечатляют — наши дети стали более любознательными и активными.</span>
+                            </div>
+                            <div class="review">
+                                <div class="review-name">
+                                    <img src="images/section9/man.png" alt="">
+
+                                    <div class="review-name-name">
+                                        <h3>Мария</h3>
+                                        <p>Вильнюс</p>
+                                    </div>
+                                </div>
+                                <span>Сад предоставляет отличные условия для развития детей. Мы довольны уровнем образования и заботой о наших детях.</span>
+                            </div>
+                        </div>
+                        <!-- Добавьте больше отзывов здесь -->
+                    </div>
+                    <button class="next"><img src="images/section9/right.png" alt=""></button>
+                    <div class="dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <!-- Добавьте больше точек для каждого слайда -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section10" data-aos="zoom-in-up">
+        <div class="container">
+            <div class="section10-content">
+                <img src="images/section10/Mapsicle Map.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" data-aos="zoom-in">
+        <div class="container">
+            <div class="footer-content">
+                <img class="footer-logo" src="images/section11/logo.png" alt="">
+
+                <div class="footer-main">
+
+                    <div class="footer-logotext">
+                        <span class="footer-number">+7 495 123 34 25</span>
+                        <span class="footer-mail">dir@kidsstory.life</span>
+                        <div class="footer-adress">Москва, ул. Муравская д.38, к.1<br/>ЖК Мир Митино <span>М. Пятницкое шоссе</span></div>
+                        <div class="footer-logotext-images">
+                            <img src="images/section11/vk.png" alt="">
+                            <img src="images/section11/tg.png" alt="">
+                        </div>
+                    </div>
+                    <div class="footer-othertext">
+                        <div class="footer-othertext-grid">
+                            <h3>О нас</h3>
+                            <span>О центре</span>
+                            <span>Документы</span>
+                            <span>Родителям</span>
+                            <span>Питание</span>
+                            <span>Новости</span>
+                            <span>3D тур</span>
+                            <span>Отзывы</span>
+                        </div>
+                        <div class="footer-othertext-grid">
+                            <h3>Расписание</h3>
+                            <span>Расписание основное</span>
+                            <span>Дополнительные услуги</span>
+                        </div>
+                        <div class="footer-othertext-grid">
+                            <h3>Программа</h3>
+                            <span>Группа (2-3 года)</span>
+                            <span>Группа (3-5 лет)</span>
+                            <span>Группа (5-7 лет)</span>
+                        </div>
+                        <div class="footer-othertext-grid">
+                            <h3>Фото и видео</h3>
+                        </div>
+                        <div class="footer-othertext-grid">
+                            <h3>Команда</h3>
+                        </div>
+                        <div class="footer-othertext-grid">
+                            <h3>Контакты</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
+
+
+    
+
     
 
 
+    
+    
+    
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
