@@ -68,8 +68,3 @@ navCross.addEventListener('click', function() {
 });
 
 
-
-
-AOS.init({
-    once: true
-});
